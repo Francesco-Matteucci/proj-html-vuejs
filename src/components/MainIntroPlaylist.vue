@@ -1,21 +1,18 @@
 <script>
-import IntroPlaylist from './MainIntroPlaylist.vue';
+
 
 export default {
     data() {
         return {
 
         }
-    },
-    components: {
-        IntroPlaylist
     }
 }
 
 </script>
 
 <template>
-    <IntroPlaylist />
+    <h1>Intro Playlist</h1>
 </template>
 
 <style scoped></style>
