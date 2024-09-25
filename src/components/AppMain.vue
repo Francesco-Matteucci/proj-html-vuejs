@@ -20,7 +20,7 @@ import BuyAvada from './BuyAvada.vue';
 </script>
 
 <template>
-      <h1>Main</h1>
+     
 
       <TypesPlans/>
       <Articles/>
