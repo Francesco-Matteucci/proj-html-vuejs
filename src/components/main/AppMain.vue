@@ -72,10 +72,12 @@ export default {
 </script>
 
 <template>
-    <IntroPlaylist />
-    <BaseMediaList :data="featuredPlaylist" />
-    <Newsletter />
-    <BaseMediaList :data="latestArticles" />
+    <main>
+        <IntroPlaylist />
+        <BaseMediaList :data="featuredPlaylist" />
+        <Newsletter />
+        <BaseMediaList :data="latestArticles" />
+    </main>
 </template>
 
 <style scoped></style>
