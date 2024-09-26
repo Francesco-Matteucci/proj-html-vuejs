@@ -1,16 +1,19 @@
 <script>
-    import Hero from './BaseHero.vue';
+    import BaseHero from './BaseHero.vue';
+    import TestimonialSection from './TestimonialSection.vue';
 
     export default {
         components: {
-            Hero
+            BaseHero,
+            TestimonialSection
         }
     };
 </script>
 
 <template>
     <main>
-        <Hero />
+        <BaseHero />
+        <TestimonialSection />
     </main>
 </template>
 
