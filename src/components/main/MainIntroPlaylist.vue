@@ -27,6 +27,7 @@ export default {
                 <p>Arcu eu facilisi ut quisque placerat nunc habitant. Magna semper mauris, venenatis, leo integer sit
                     pellentesque.</p>
             </li>
+            <!-- <li>Button</li> -->
         </ul>
     </section>
 </template>
@@ -49,7 +50,7 @@ section {
         list-style-type: none;
         margin-bottom: 0;
         margin-left: 2rem;
-        padding: 4rem;
+        padding: 5rem;
 
         li {
             margin-bottom: 2rem;
@@ -67,6 +68,20 @@ section {
         p {
             font-size: 23px;
             color: rgb(126, 120, 135);
+        }
+    }
+
+}
+
+@media screen and (max-width: 1020px) {
+    section {
+        .intro-image {
+            display: none;
+        }
+
+        ul {
+            flex-basis: 100%;
+            margin-left: 0;
         }
     }
 

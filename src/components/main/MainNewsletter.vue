@@ -9,7 +9,11 @@ export default {
     },
     methods: {
         logEmail(email) {
-            console.log(email);
+            if (!email) {
+                return;
+            } else {
+                console.log(email);
+            }
         }
     },
     components: {
@@ -26,7 +30,7 @@ export default {
             <h2>Insider offers & flash sales in your inbox every week.</h2>
             <div class="input-email">
                 <input @keyup.enter="logEmail(inputUserEmail)" v-model="inputUserEmail" type="email"
-                    placeholder="Insert your email ...*">
+                    placeholder="Insert your email ...*" required>
             </div>
             <!-- BaseButton -->
             <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus dolor sit amet, consectetur
@@ -43,7 +47,7 @@ export default {
     background: linear-gradient(90deg, #000 47%, transparent 76%), url('../../assets/img/banner1-2x.jpg');
     background-size: cover;
     background-position: bottom 0 right 0;
-    padding: 5rem;
+    padding: 4rem;
 
 
     .newsletter-body {
@@ -89,5 +93,17 @@ export default {
         }
     }
 
+}
+
+@media screen and (max-width: 1020px) {
+    #newsletter {
+        .newsletter-body {
+            max-width: 100%;
+
+            input {
+                width: 100%;
+            }
+        }
+    }
 }
 </style>
