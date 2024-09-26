@@ -3,7 +3,7 @@ import TypesPlansItem from './TypesPlansItem.vue';
 
  export default {
     data() {
-        return{  
+        return{
             info:[
                 {
                     icon: "",
@@ -31,20 +31,20 @@ import TypesPlansItem from './TypesPlansItem.vue';
     },
     components:{
             TypesPlansItem
-        }  
+        }
 }
 
 </script>
 
 <template>
     <section class="row">
-        
-            <div v-for="(item, i) in info" :key="i" :itemCard="item" class="col-8 col-md-3 container mb-5">
-                <TypesPlansItem :itemCard="item"/>
+        <div class="d-flex gap-5 justify-content-center">
+            <div v-for="(item, i) in info" :key="i" :itemCard="item" class="col-10 col-md-3 mb-5">
+                <TypesPlansItem :itemCard="item" />
             </div>
-         
-    </section> 
-  
+        </div>
+    </section>
+
 </template>
 
 <style lang="scss" scoped>

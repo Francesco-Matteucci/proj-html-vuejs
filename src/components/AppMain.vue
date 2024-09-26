@@ -1,7 +1,7 @@
 <script>
-import TypesPlans from './TypesPlans.vue';
-import Articles from './Articles.vue';
-import BuyAvada from './BuyAvada.vue';
+import MainTypesPlans from './MainTypesPlans.vue';
+import MainArticles from './MainArticles.vue';
+import MainBuyAvada from './MainBuyAvada.vue';
 
 
  export default {
@@ -11,17 +11,17 @@ import BuyAvada from './BuyAvada.vue';
         }
     },
     components: {
-        TypesPlans,
-        Articles,
-        BuyAvada
+        MainTypesPlans,
+        MainArticles,
+        MainBuyAvada
     }  
 }
 </script>
 
 <template>
-      <TypesPlans/>
-      <Articles/>
-      <BuyAvada />
+      <MainTypesPlans/>
+      <MainArticles/>
+      <MainBuyAvada />
 </template>
 
 <style scoped>
