@@ -14,7 +14,7 @@ export default {
 <template>
     <section id="intro-playlist">
         <div class="intro-image">
-            <img src="../assets/img/service15-2x.jpg" alt="">
+            <img src="../../assets/img/service15-2x.jpg" alt="">
         </div>
         <ul class="intro-text">
             <li>
