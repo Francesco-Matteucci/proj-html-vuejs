@@ -40,7 +40,7 @@
         text-align: center;
         transform: translate(-50%, -50%); 
         
-        width: 576px;
+        width: 500px;
     }
 
     h1{

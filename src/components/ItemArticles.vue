@@ -1,13 +1,9 @@
 <script>
-import ItemArticles from './ItemArticles.vue';
 
  export default {
     data() {
         return{
         }
-    },
-    components:{
-        ItemArticles
     }  
 }
 
@@ -15,9 +11,12 @@ import ItemArticles from './ItemArticles.vue';
 
 <template>
 
+
     <section>
-       
-        <ItemArticles/>
+        <h1>ArticlesItem</h1>
+        <h2></h2>
+        <img src="" alt="">
+
     </section>
 </template>
 
