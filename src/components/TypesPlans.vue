@@ -39,7 +39,7 @@ import TypesPlansItem from './TypesPlansItem.vue';
 <template>
     <section class="row">
         
-            <div v-for="(item, i) in info" :key="i" :itemCard="item" class="col-8 col-md-3 container mb-4">
+            <div v-for="(item, i) in info" :key="i" :itemCard="item" class="col-8 col-md-3 container mb-5">
                 <TypesPlansItem :itemCard="item"/>
             </div>
          

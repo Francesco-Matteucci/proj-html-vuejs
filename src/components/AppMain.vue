@@ -16,12 +16,9 @@ import BuyAvada from './BuyAvada.vue';
         BuyAvada
     }  
 }
-
 </script>
 
 <template>
-     
-
       <TypesPlans/>
       <Articles/>
       <BuyAvada />
