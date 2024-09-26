@@ -19,8 +19,10 @@ export default {
         <div class="container-fluid">
             <div class="section-top d-flex align-items-center justify-content-between mb-5">
                 <h3>{{ data.textTop.titleSection }}</h3>
-                <div class="view-all d-flex align-items-center gap-2">
-                    <h5>{{ data.textTop.textRight }}</h5>
+                <div class="view-all align-items-center gap-2">
+                    <a href="#">
+                        <h5>{{ data.textTop.textRight }}</h5>
+                    </a>
                     <i class="fas fa-chevron-right fa-xs"></i>
                 </div>
             </div>
@@ -28,8 +30,10 @@ export default {
                 <div class="col" v-for="(m, index) in data.media" :key="index">
                     <div class="media">
                         <div class="media-image mb-3">
-                            <img :src="getImagePath(m.src)" :alt="m.titleMedia">
-                            <span v-if="data.playButton" class="play-icon"><i class="fas fa-play fa-xs"></i></span>
+                            <a href="#">
+                                <img :src="getImagePath(m.src)" :alt="m.titleMedia">
+                                <span v-if="data.playButton" class="play-icon"><i class="fas fa-play fa-xs"></i></span>
+                            </a>
                         </div>
                         <div :class="this.data.styleText ? this.data.styleText : ''" class="media-body">
                             <h4 class="mb-1">{{ m.titleMedia }}</h4>
@@ -47,6 +51,10 @@ export default {
 <style lang="scss" scoped>
 section {
     padding: 4rem;
+
+    .view-all {
+        display: flex;
+    }
 
     h3 {
         font-size: 27px;
@@ -83,6 +91,12 @@ section {
             color: rgb(65, 84, 255);
             font-weight: 500;
         }
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    section .view-all {
+        display: none;
     }
 }
 </style>
