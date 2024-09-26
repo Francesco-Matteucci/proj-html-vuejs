@@ -67,7 +67,7 @@
                 <AppDropdownMenu v-if="activeDropdown === 'Store'" :menu-items="dropdownMenus['Store']" />
             </li>
             <li class="nav-item">
-                <a class="nav-link btn-header" href="#">Schedule a workout</a>
+                <a class="nav-link base-btn text-white" href="#">Schedule a workout</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">
@@ -113,16 +113,6 @@
             }
         }
 
-        .btn-header {
-            color: #fff;
-            background-color: #4154FF;
-            border-radius: 20px;
-            padding: 10px 20px;
-
-            &:hover {
-                background-color: #FF414B;
-            }
-        }
     }
 
     .dropdown:hover .dropdown-menu {

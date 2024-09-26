@@ -1,0 +1,13 @@
+.base-btn {
+    color: #fff;
+    background-color: #4154FF;
+    border-radius: 20px;
+    padding: 10px 20px;
+    line-height: 17px;
+    font-size: 14px;
+    text-decoration: none;
+
+    &:hover {
+        background-color: #FF414B;
+    }
+}
