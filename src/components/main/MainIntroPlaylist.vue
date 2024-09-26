@@ -14,7 +14,9 @@ export default {
 <template>
     <section id="intro-playlist">
         <div class="intro-image">
-            <img src="../../assets/img/service15-2x.jpg" alt="">
+            <a href="#">
+                <span class="play-icon"><i class="fas fa-play"></i></span>
+            </a>
         </div>
         <ul class="intro-text">
             <li>
@@ -27,7 +29,7 @@ export default {
                 <p>Arcu eu facilisi ut quisque placerat nunc habitant. Magna semper mauris, venenatis, leo integer sit
                     pellentesque.</p>
             </li>
-            <!-- <li>Button</li> -->
+            <li><a class="base-btn" href="#"><i class="fa-brands fa-youtube me-2"></i>Visit my Youtube channel</a></li>
         </ul>
     </section>
 </template>
@@ -40,37 +42,60 @@ section {
         flex-basis: 50%;
     }
 
-    img {
-        max-width: 100%;
-        height: auto;
+    .intro-image {
+        background-image: url('../../assets/img/service15-2x.jpg');
+        background-size: cover;
+        background-position: center;
         border-bottom-right-radius: 50px;
+        position: relative;
+
+        i {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+        }
     }
+
 
     ul {
         list-style-type: none;
         margin-bottom: 0;
-        margin-left: 2rem;
+        margin-left: 1rem;
         padding: 5rem;
 
         li {
             margin-bottom: 2rem;
-        }
 
-        h3 {
-            color: rgb(65, 84, 255);
-        }
+            h3 {
+                color: rgb(65, 84, 255);
+            }
 
-        h2 {
-            font-size: 62px;
-            color: #000;
-        }
+            h2 {
+                font-size: 62px;
+                color: #000;
+            }
 
-        p {
-            font-size: 23px;
-            color: rgb(126, 120, 135);
+            p {
+                font-size: 23px;
+                color: rgb(126, 120, 135);
+            }
+
+            .base-btn {
+                display: inline-block;
+                font-size: 18px;
+                font-weight: 500;
+                padding: 17px 3rem;
+                border-radius: 30px;
+                background-color: #ff414b;
+
+                &:hover {
+                    background-color: rgb(65, 84, 255);
+                }
+            }
         }
     }
-
 }
 
 @media screen and (max-width: 1020px) {
@@ -84,6 +109,5 @@ section {
             margin-left: 0;
         }
     }
-
 }
 </style>
