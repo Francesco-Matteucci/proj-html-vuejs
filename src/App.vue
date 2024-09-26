@@ -1,22 +1,20 @@
 <script>
-
+import AppHeader from './components/header/AppHeader.vue';
 import AppMain from './components/AppMain.vue'
 
 export default {
-    data() {
-        return {
-
-        }
-    },
     components: {
+        AppHeader,
         AppMain
     }
-}
-
+};
 </script>
 
 <template>
-    <AppMain />
+    <div id="app">
+        <AppHeader />
+        <AppMain />
+    </div>
 </template>
 
-<style></style>
+<style scoped></style>
