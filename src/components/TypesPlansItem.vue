@@ -33,7 +33,7 @@ export default {
 <style lang="scss" scoped>
     article{
         width: 100%;
-        height: 500px;
+        height: 550px;
         border: 5px solid #4154ff;
         border-radius: 5px;
         text-decoration: none;
@@ -70,5 +70,6 @@ export default {
         transition: all 0.3s linear;
         scale: 1.05;
     }
+
 
 </style>

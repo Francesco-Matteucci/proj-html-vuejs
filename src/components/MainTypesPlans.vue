@@ -37,8 +37,8 @@ import TypesPlansItem from './TypesPlansItem.vue';
 </script>
 
 <template>
-    <section class="row">
-        <div class="d-flex gap-5 justify-content-center">
+    <section class="row ">
+        <div class="d-flex gap-5 justify-content-center flex-wrap">
             <div v-for="(item, i) in info" :key="i" :itemCard="item" class="col-10 col-md-3 mb-5">
                 <TypesPlansItem :itemCard="item" />
             </div>
