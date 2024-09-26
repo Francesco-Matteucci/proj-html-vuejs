@@ -1,15 +1,5 @@
 <script>
-
-
 export default {
-    data() {
-        return {
-
-        }
-    },
-    components: {
-
-    },
     props: {
         data: {
             type: Object,
@@ -22,7 +12,6 @@ export default {
         }
     }
 }
-
 </script>
 
 <template>
@@ -81,7 +70,6 @@ section {
             left: 50%;
             transform: translate(-50%, -50%);
         }
-
     }
 
     .media-body {
@@ -95,7 +83,6 @@ section {
             color: rgb(65, 84, 255);
             font-weight: 500;
         }
-
     }
 }
 </style>

@@ -1,11 +1,7 @@
 <script>
-
-
 export default {
     data() {
-        return {
-            inputUserEmail: ''
-        }
+        return { inputUserEmail: '' }
     },
     methods: {
         logEmail(email) {
@@ -16,11 +12,7 @@ export default {
             }
         }
     },
-    components: {
-
-    }
 }
-
 </script>
 
 <template>
