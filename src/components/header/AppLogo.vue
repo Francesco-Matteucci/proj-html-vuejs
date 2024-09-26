@@ -1,5 +1,5 @@
 <template>
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand me-5" href="#">
         <img src="../../assets/img/logo.png" alt="Logo del sito">
     </a>
 </template>

@@ -11,3 +11,22 @@
         background-color: #FF414B;
     }
 }
+
+.play-icon {
+    flex-grow: 1;
+    align-self: center;
+    font-size: 1.2rem;
+
+    i {
+        color: #4154FF;
+        line-height: 90px;
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        background-color: #fff;
+
+        &:hover {
+            color: #FF414B;
+        }
+    }
+}
