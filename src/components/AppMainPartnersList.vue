@@ -55,11 +55,4 @@ export default {
 
 </template>
 
-<style scoped>
-.sponsor-container {
-  flex-basis: 25%;
-  text-align: center;
-  height: 170px;
-  flex-shrink: 1;
-}
-</style>
+<style scoped></style>

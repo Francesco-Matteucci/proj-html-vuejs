@@ -1,24 +1,27 @@
 <script>
 import AppMainPartnersList from './AppMainPartnersList.vue';
+import AppMainCrossfitDay from './AppMaincrossfitDay.vue';
 export default {
   data() {
     return {
-      
+
     }
   },
-  components:{
-AppMainPartnersList,
+  components: {
+    AppMainPartnersList,
+    AppMainCrossfitDay
   }
 }
 </script>
 
 <template>
-    <div id="app">
-        <AppMainPartnersList/>
-    </div>
+  <div id="app">
+
+    <AppMainPartnersList />
+    <AppMainCrossfitDay />
+  </div>
 
 
 </template>
 
-<style scoped>
-</style>
+<style scoped></style>
