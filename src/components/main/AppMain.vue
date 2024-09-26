@@ -28,6 +28,7 @@ export default {
                         subtitleMedia: "Shed those extra pounds"
                     }
                 ],
+                playButton: true,
                 styleText: 'text-center',
                 styleParagraph: 'text-different'
             },
@@ -40,24 +41,23 @@ export default {
                     {
                         src: "blog4-2x.jpg",
                         titleMedia: "The best protein shake",
-                        subtitleMedia: "Published On: November 26th, 2019 |",
-                        comments: "2 Comments"
+                        subtitleMedia: "Published On: November 26th, 2019",
+                        comments: "| 2 Comments"
                     },
                     {
                         src: "blog1-2x.jpg",
                         titleMedia: "Ultimate Cardio workout",
-                        subtitleMedia: "Published On: November 26th, 2019 |",
-                        comments: "0 Comments"
-
+                        subtitleMedia: "Published On: November 26th, 2019",
+                        comments: "| 0 Comments"
                     },
                     {
                         src: "blog3-2x.jpg",
                         titleMedia: "New Juices available now",
-                        subtitleMedia: "Published On: November 26th, 2019 |",
-                        comments: "0 Comments"
-
+                        subtitleMedia: "Published On: November 26th, 2019",
+                        comments: "| 0 Comments"
                     }
                 ],
+                playButton: false,
             },
         }
     },
@@ -66,7 +66,6 @@ export default {
         BaseMediaList,
         Newsletter,
         BaseMediaList,
-
     }
 }
 
@@ -77,7 +76,6 @@ export default {
     <BaseMediaList :data="featuredPlaylist" />
     <Newsletter />
     <BaseMediaList :data="latestArticles" />
-
 </template>
 
 <style scoped></style>

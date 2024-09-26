@@ -38,8 +38,9 @@ export default {
             <div class="row row-cols-1 row-cols-md-3 g-5">
                 <div class="col" v-for="(m, index) in data.media" :key="index">
                     <div class="media">
-                        <div class="media-image">
-                            <img class="mb-3" :src="getImagePath(m.src)" :alt="m.titleMedia">
+                        <div class="media-image mb-3">
+                            <img :src="getImagePath(m.src)" :alt="m.titleMedia">
+                            <span v-if="data.playButton" class="play-icon"><i class="fas fa-play fa-xs"></i></span>
                         </div>
                         <div :class="this.data.styleText ? this.data.styleText : ''" class="media-body">
                             <h4 class="mb-1">{{ m.titleMedia }}</h4>
@@ -62,10 +63,25 @@ section {
         font-size: 27px;
     }
 
-    img {
-        max-width: 100%;
-        height: auto;
-        border-bottom-right-radius: 30px;
+    .media-image {
+        position: relative;
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-bottom-right-radius: 30px;
+        }
+
+        i {
+            position: absolute;
+            height: 60px;
+            width: 60px;
+            line-height: 60px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
     }
 
     .media-body {
