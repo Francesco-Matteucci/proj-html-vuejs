@@ -35,17 +35,23 @@ export default {
 </script>
 
 <template>
-  <div id="app">
 
-    <div class="sponsor-container container">
-      <div class="row">
 
+  <div>
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-3 " v-for="(sponsor, index) in sponsors" :key="index"
+        :sponsorLogo="sponsor.logo" :sponsorTxt="sponsor.text" :sponsorCall="sponsor.call">
+
+        <AppMainPartnersListCard class="container" :sponsorLogo="sponsor.logo" :sponsorTxt="sponsor.text"
+          :sponsorCall="sponsor.call" />
       </div>
-      <AppMainPartnersListCard v-for="(sponsor, index) in sponsors" :key="index" :sponsorLogo="sponsor.logo"
-        :sponsorTxt="sponsor.text" :sponsorCall="sponsor.call" />
     </div>
-
   </div>
+
+
+
+
+
 
 </template>
 
@@ -53,10 +59,7 @@ export default {
 .sponsor-container {
   flex-basis: 25%;
   text-align: center;
-  height: 290px;
+  height: 170px;
   flex-shrink: 1;
-
-
-
 }
 </style>

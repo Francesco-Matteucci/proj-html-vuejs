@@ -56,11 +56,10 @@ export default {
 
 <style lang="css" scoped>
 img {
-    width: 100px;
+    width: 190px;
 
 }
 
-;
 
 .sponsor-card {
 
@@ -74,7 +73,7 @@ img {
 }
 
 .card-text {
-    height: 250px;
+    height: 180px;
     font-size: 18px;
 }
 </style>
