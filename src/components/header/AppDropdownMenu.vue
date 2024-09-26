@@ -10,7 +10,7 @@
 </script>
 
 <template>
-    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+    <ul class="dropdown-menu">
         <li v-for="item in menuItems" :key="item.text">
             <a class="dropdown-item">{{ item.text }}</a>
         </li>
@@ -19,6 +19,7 @@
 
 <style scoped lang="scss">
     .dropdown-menu {
+        margin-top: 20px;
         background-color: #060607;
         border: none;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
