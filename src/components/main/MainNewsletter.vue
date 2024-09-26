@@ -9,7 +9,7 @@ export default {
     },
     methods: {
         logEmail(email) {
-            if (!email) {
+            if (!email || email === '') {
                 return;
             } else {
                 console.log(email);
@@ -28,20 +28,22 @@ export default {
         <div class="newsletter-body">
             <h3>Join our mailing list today</h3>
             <h2>Insider offers & flash sales in your inbox every week.</h2>
-            <div class="input-email">
-                <input @keyup.enter="logEmail(inputUserEmail)" v-model="inputUserEmail" type="email"
+            <form @submit.prevent="logEmail(inputUserEmail)" class="input-email">
+                <input @keyup.enter="logEmail(inputUserEmail)" v-model.trim="inputUserEmail" type="email"
                     placeholder="Insert your email ...*" required>
-            </div>
-            <!-- BaseButton -->
-            <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus dolor sit amet, consectetur
+                <button class="base-btn" type="submit">Subscribe</button>
+            </form>
+            <p>
+                Curabitur non nulla sit amet nisl tempus convallis quis ac lectus dolor sit amet, consectetur
                 adipiscing
                 elit
-                sed porttitor lectus.</p>
+                sed porttitor lectus.
+            </p>
         </div>
     </section>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 #newsletter {
 
     background: linear-gradient(90deg, #000 47%, transparent 76%), url('../../assets/img/banner1-2x.jpg');
@@ -51,7 +53,7 @@ export default {
 
 
     .newsletter-body {
-        max-width: 60%;
+        max-width: 70%;
 
         >* {
             margin-bottom: 2rem;
@@ -66,23 +68,39 @@ export default {
             color: #fff;
         }
 
-        input,
-        input::placeholder {
-            font-size: 18px;
-        }
+        .input-email {
 
-        input {
-            width: 60%;
-            line-height: 55px;
-            padding: 0 1rem;
-            border-radius: 30px;
-
-            &:focus {
-                outline: none;
+            input,
+            input::placeholder {
+                font-size: 18px;
             }
 
-            &::placeholder {
-                color: rgb(152, 147, 159);
+            input {
+                width: 60%;
+                line-height: 50px;
+                padding: 0 1rem;
+                border-radius: 30px;
+                margin-right: 1.5rem;
+
+                &:focus {
+                    outline: none;
+                }
+
+                &::placeholder {
+                    color: rgb(152, 147, 159);
+                }
+            }
+
+            .base-btn {
+                font-size: 18px;
+                font-weight: 500;
+                padding: 16px 3rem;
+                border-radius: 30px;
+                border-color: rgb(65, 84, 255);
+
+                &:hover {
+                    border-color: #ff414b;
+                }
             }
         }
 
@@ -100,7 +118,14 @@ export default {
         .newsletter-body {
             max-width: 100%;
 
-            input {
+            .input-email input {
+                display: block;
+                width: 100%;
+                margin-bottom: 2rem;
+            }
+
+            .input-email .base-btn {
+                display: block;
                 width: 100%;
             }
         }
