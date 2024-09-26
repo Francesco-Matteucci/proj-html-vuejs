@@ -31,14 +31,14 @@ export default {
 
 
         <div class=" card sponsor-card text-center border-0">
-            <a href="#"></a>
-            <img :src="sponsorLogo" class="img-fluid" alt="logo">
-            <div class="card-body">
-                <p class="card-text">{{ sponsorTxt }}</p>
-                <h6 class="fw-bold">{{ sponsorCall }}</h6>
-            </div>
+            <a href="https://avada.website/fitness/playlist/">
+                <img :src="sponsorLogo" class="img-fluid" alt="logo">
+                <div class="card-body">
+                    <p class="card-text">{{ sponsorTxt }}</p>
+                    <h6 class="fw-bold">{{ sponsorCall }}</h6>
+                </div>
 
-
+            </a>
 
 
         </div>
@@ -68,12 +68,15 @@ img {
     cursor: pointer;
 }
 
-.sponsor-card:hover {
-    transform: scale(1.05);
-}
+
 
 .card-text {
     height: 180px;
     font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 </style>

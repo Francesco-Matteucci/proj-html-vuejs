@@ -11,11 +11,17 @@ export default {
 <template>
     <section>
         <div class="banner-container">
-            <div class="circle-button"> <a href="#"></a> <i class="fa-solid fa-play"></i></div>
+            <a href="https://avada.website/fitness/playlist/">
+                <div class="circle-button"><i class="fa-solid fa-play"></i></div>
+            </a>
             <h2>Crossfit Workout of the day</h2>
             <h3>November 15th, 2019</h3>
-            <h5>View all Videos <a href="https://avada.website/fitness/playlist/"></a> <span
-                    class="arrow-right">&rarr;</span></h5>
+
+            <a href="https://avada.website/fitness/playlist/">
+                <h5>View all Videos &rarr;</h5>
+            </a>
+
+
 
         </div>
     </section>

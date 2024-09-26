@@ -55,4 +55,20 @@ export default {
 
 </template>
 
-<style scoped></style>
+<style scoped>
+.row {
+  animation: moveUp 1s ease-out;
+}
+
+@keyframes moveUp {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+</style>
