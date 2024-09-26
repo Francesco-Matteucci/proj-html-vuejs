@@ -19,4 +19,4 @@ export default {
     <AppMain />
 </template>
 
-<style scoped></style>
+<style></style>

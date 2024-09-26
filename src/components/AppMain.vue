@@ -1,5 +1,6 @@
 <script>
 import IntroPlaylist from './MainIntroPlaylist.vue';
+import Newsletter from './MainNewsletter.vue';
 
 export default {
     data() {
@@ -8,7 +9,8 @@ export default {
         }
     },
     components: {
-        IntroPlaylist
+        IntroPlaylist,
+        Newsletter
     }
 }
 
@@ -16,6 +18,7 @@ export default {
 
 <template>
     <IntroPlaylist />
+    <Newsletter />
 </template>
 
 <style scoped></style>
