@@ -3,3 +3,35 @@
 * {
     font-family: 'Barlow Semi Condensed', sans-serif;
 }
+
+.base-btn {
+    color: white;
+    background-color: #4145ff;
+    border-radius: 20px;
+    padding: 10px 20px;
+    line-height: 17px;
+    font-size: 14px;
+    text-decoration: none;
+
+    &:hover {
+        background-color: #ff414b;
+    }
+}
+
+.play-icon {
+    font-size: 1.2rem;
+
+    i {
+        color: #4145ff;
+        text-align: center;
+        line-height: 90px;
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        background-color: white;
+
+        &:hover {
+            color: #ff414b;
+        }
+    }
+}
