@@ -1,82 +1,87 @@
 <script>
-export default {
-    data() {
-        return {
+    export default {
+        data() {
+            return {
+
+            }
+        },
+        props: {
+            sponsorLogo: {
+                type: String,
+                required: true,
+
+            },
+            sponsorTxt: {
+                type: String,
+                required: true,
+
+            },
+            sponsorCall: {
+                type: String,
+                required: true,
+
+            },
 
         }
-    },
-    props: {
-        sponsorLogo: {
-            type: String,
-            required: true,
-
-        },
-        sponsorTxt: {
-            type: String,
-            required: true,
-
-        },
-        sponsorCall: {
-            type: String,
-            required: true,
-
-        },
-
     }
-}
 </script>
 
 <template>
     <div id="app">
-
-
-        <div class=" card sponsor-card text-center border-0">
+        <div class="card sponsor-card text-center border-0">
             <a href="https://avada.website/fitness/playlist/">
                 <img :src="sponsorLogo" class="img-fluid" alt="logo">
                 <div class="card-body">
                     <p class="card-text">{{ sponsorTxt }}</p>
                     <h6 class="fw-bold">{{ sponsorCall }}</h6>
                 </div>
-
             </a>
-
-
         </div>
-
-
-
-
-
-
-
-
-
     </div>
 </template>
 
-<style lang="css" scoped>
-img {
-    width: 190px;
+<style scoped lang="scss">
+    img {
+        width: 150px;
+    }
 
-}
+    .sponsor-card {
 
+        text-align: center;
+        padding: 100px 0;
+        cursor: pointer;
+    }
 
-.sponsor-card {
+    .card-text {
+        height: 100px;
+        font-size: 16px;
+        color: #6c757d;
+    }
 
-    text-align: center;
-    padding: 20px;
-    cursor: pointer;
-}
+    h6 {
+        font-size: 16px;
+        font-weight: bold;
+        color: #000;
+    }
 
+    a {
+        text-decoration: none;
+        color: #000;
+    }
 
+    @media (max-width: 768px) {
+        img {
+            width: 120px;
 
-.card-text {
-    height: 180px;
-    font-size: 18px;
-}
+        }
 
-a {
-    text-decoration: none;
-    color: black;
-}
+        .card-text {
+            height: auto;
+            font-size: 14px;
+        }
+
+        h6 {
+            font-size: 14px;
+        }
+    }
 </style>
