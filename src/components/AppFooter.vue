@@ -1,19 +1,24 @@
 <script>
+import FooterTopList from './footerTopList.vue';
+
+
+
 export default {
   data() {
     return {
-      
+
     }
+  },
+  components: {
+    FooterTopList,
   }
+
 }
 </script>
 
 <template>
-<div id="app">
-  <div class="top-footer"></div>
-  <div class="bottom-footer"></div>
-</div>
+
+  <FooterTopList />
 </template>
 
-<style scoped>
-</style>
+<style scoped></style>

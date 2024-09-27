@@ -1,8 +1,10 @@
 <script>
 import AppMain from './components/AppMain.vue';
+import AppFooter from './components/AppFooter.vue';
 export default {
     components: {
-        AppMain
+        AppMain,
+        AppFooter
     }
 };
 
@@ -10,9 +12,9 @@ export default {
 </script>
 
 <template>
-    <div id="app">
-        <AppMain />
-    </div>
+
+    <AppMain />
+    <AppFooter />
 
 </template>
 

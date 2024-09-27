@@ -32,7 +32,7 @@ export default {
     background: linear-gradient(to bottom, rgba(3, 3, 205, 0.5), rgba(144, 10, 10, 0.5)), url(../assets/img/banner14-2x.jpg);
     background-size: cover;
     background-position: center;
-    min-height: 400px;
+    min-height: 500px;
     margin-top: 20px;
     display: flex;
     flex-direction: column;
