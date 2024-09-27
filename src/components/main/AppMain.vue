@@ -4,6 +4,8 @@ import TestimonialSection from './TestimonialSection.vue';
 import IntroPlaylist from './MainIntroPlaylist.vue';
 import BaseMediaList from '../general/BaseMediaList.vue';
 import Newsletter from './MainNewsletter.vue';
+import MainPlans from './MainPlans.vue';
+import MainBuyAvada from './MainBuyAvada.vue';
 
 export default {
     data() {
@@ -70,6 +72,8 @@ export default {
         BaseMediaList,
         Newsletter,
         BaseMediaList,
+        MainPlans,
+        MainBuyAvada
     }
 }
 
@@ -83,6 +87,8 @@ export default {
         <BaseMediaList :data="featuredPlaylist" />
         <Newsletter />
         <BaseMediaList :data="latestArticles" />
+        <MainPlans/>
+      <MainBuyAvada />
     </main>
 </template>
 
