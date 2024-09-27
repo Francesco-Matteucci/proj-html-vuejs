@@ -1,9 +1,9 @@
 <script>
-    import AppDropdownMenu from './AppDropdownMenu.vue';
+    import DropdownMenu from './DropdownMenu.vue';
 
     export default {
         components: {
-            AppDropdownMenu
+            DropdownMenu
         },
         data() {
             return {
@@ -75,22 +75,22 @@
                 </li>
                 <li class="nav-item dropdown" @mouseenter="showDropdown('Services')" @mouseleave="hideDropdown">
                     <a class="nav-link dropdown-toggle" href="#">Services</a>
-                    <AppDropdownMenu v-if="activeDropdown === 'Services'" :menu-items="dropdownMenus.Services" />
+                    <DropdownMenu v-if="activeDropdown === 'Services'" :menu-items="dropdownMenus.Services" />
                 </li>
                 <li class="nav-item dropdown" @mouseenter="showDropdown('About')" @mouseleave="hideDropdown">
                     <a class="nav-link dropdown-toggle" href="#">About</a>
-                    <AppDropdownMenu v-if="activeDropdown === 'About'" :menu-items="dropdownMenus.About" />
+                    <DropdownMenu v-if="activeDropdown === 'About'" :menu-items="dropdownMenus.About" />
                 </li>
                 <li class="nav-item dropdown" @mouseenter="showDropdown('Videos')" @mouseleave="hideDropdown">
                     <a class="nav-link dropdown-toggle" href="#">Videos</a>
-                    <AppDropdownMenu v-if="activeDropdown === 'Videos'" :menu-items="dropdownMenus.Videos" />
+                    <DropdownMenu v-if="activeDropdown === 'Videos'" :menu-items="dropdownMenus.Videos" />
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Blog</a>
                 </li>
                 <li class="nav-item dropdown" @mouseenter="showDropdown('Store')" @mouseleave="hideDropdown">
                     <a class="nav-link dropdown-toggle" href="#">Store <span>new</span></a>
-                    <AppDropdownMenu v-if="activeDropdown === 'Store'" :menu-items="dropdownMenus.Store" />
+                    <DropdownMenu v-if="activeDropdown === 'Store'" :menu-items="dropdownMenus.Store" />
                 </li>
                 <li class="nav-item">
                     <a :class="[isMobile ? 'nav-link' : 'nav-link base-btn text-white']" href="#">Schedule a workout</a>
@@ -162,7 +162,6 @@
     }
 
 
-    /* Effetto di transizione */
     .fade-slide-enter-active,
     .fade-slide-leave-active {
         transition: opacity 0.5s ease, transform 0.5s ease;

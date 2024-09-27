@@ -1,146 +1,111 @@
 <script>
-import AppLogo from '../header/AppLogo.vue';
+  import AppLogo from '../general/AppLogo.vue';
 
-export default {
-  components: {
-    AppLogo,
-  },
-};
+  export default {
+    components: {
+      AppLogo,
+    },
+    data() {
+      return {
+        recentPosts: [
+          "The best protein shake",
+          "Ultimate cardio workout",
+          "New juices available now",
+          "Tips to find training partners",
+          "20 best healthy recipes",
+        ],
+        contactInfo: {
+          address: "4746 Tipple Road Michigan 48449",
+          phone: "Mobile: 1.800.000.0000",
+          email: "info@your-company.com",
+        },
+        socialLinks: [
+          { icon: "fab fa-facebook-f", link: "#" },
+          { icon: "fab fa-x-twitter", link: "#" },
+          { icon: "fab fa-instagram", link: "#" },
+          { icon: "fab fa-youtube", link: "#" },
+          { icon: "fab fa-linkedin-in", link: "#" }
+        ],
+      };
+    },
+  };
 </script>
 
 <template>
-  <footer class="footer">
+  <footer class="footer py-5 ">
     <div class="container">
-      <div class="footer-content d-flex flex-wrap justify-content-between">
-        <div class="footer-column col-md-4">
-          <div class="logo-and-text">
+      <div class="row text-md-start">
+
+        <div class="col-12 col-md-4 mb-4 mb-md-0">
+          <div class="logo-and-text text-center">
             <AppLogo />
             <p class="mt-3">Your health is our priority. Join us and start your journey to a better life.</p>
           </div>
-          <div class="social-icons mt-3">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
+          <div class="social-icons text-center mt-3">
+            <a v-for="(social, index) in socialLinks" :key="index" :href="social.link" class="me-3 text-danger">
+              <i :class="social.icon"></i>
+            </a>
           </div>
         </div>
 
-        <div class="footer-column col-md-4">
-          <h5>RECENT POSTS</h5>
-          <ul class="recent-posts">
-            <li><a href="#">The best protein shake</a></li>
-            <li><a href="#">Ultimate cardio workout</a></li>
-            <li><a href="#">New juices available now</a></li>
-            <li><a href="#">Tips to find training partners</a></li>
-            <li><a href="#">20 best healthy recipes</a></li>
+        <div class="col-12 col-md-4 mb-4 mb-md-0 text-center">
+          <h5 class="text-white">RECENT POSTS</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2" v-for="(post, index) in recentPosts" :key="index">
+              <i class="fa-solid fa-chevron-right"></i><a href="#" class="ms-2 text-decoration-none">{{ post
+                }}</a>
+            </li>
           </ul>
         </div>
 
-        <div class="footer-column col-md-4">
-          <h5>CONTACT INFORMATION</h5>
-          <ul class="contact-info">
-            <li><i class="fas fa-map-marker-alt"></i> 4746 Tipple Road Michigan 48449</li>
-            <li><i class="fas fa-mobile-alt"></i> Mobile: 1.800.000.0000</li>
-            <li><i class="fas fa-envelope"></i> Email: info@your-company.com</li>
+        <div class="col-12 col-md-4  text-center">
+          <h5 class="text-white">CONTACT INFORMATION</h5>
+          <ul class="list-unstyled">
+            <li id="contact-address" class="text-secondary"><i class="fas fa-map-marker-alt me-2 mb-3"></i>{{
+              contactInfo.address
+            }}</li>
+            <li class="text-white"><i class="fas fa-mobile-alt me-2"></i>{{ contactInfo.phone }}</li>
+            <li class="text-white"><i class="fas fa-envelope me-2"></i>{{ contactInfo.email }}</li>
           </ul>
         </div>
+      </div>
+
+      <hr class="footer-line my-4" />
+      <div class="footer-bottom text-center">
+        <p class="text-secondary small">© 2012 - 2024 • <a href="#" class="text-decoration-none">Avada</a> is a <a
+            href="#" class="text-decoration-none">Website Builder</a> for <a href="#"
+            class="text-decoration-none">WordPress</a>
+          and <a href="#" class="text-decoration-none">eCommerce</a> • All Rights Reserved • Developed by <a href="#"
+            class="text-decoration-none">TeamOne</a></p>
       </div>
     </div>
   </footer>
 </template>
 
 <style scoped lang="scss">
-.footer {
-  background-color: #060607;
-  color: #fff;
-  padding: 4rem 0;
-
-  .footer-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-    .footer-column {
-      margin-bottom: 2rem;
-
-      h5 {
-        font-size: 1.5rem;
-        margin-bottom: 1.5rem;
-        color: #fff;
-      }
-
-      p {
-        color: #93919F;
-        font-size: 1rem;
-        margin: 0;
-      }
-
-      ul {
-        list-style: none;
-        padding: 0;
-
-        li {
-          margin-bottom: 1rem;
-          color: #93919F;
-          font-size: 1rem;
-
-          a {
-            color: #93919F;
-            text-decoration: none;
-
-            &:hover {
-              color: #fff;
-            }
-          }
-
-          i {
-            margin-right: 0.5rem;
-            color: #fff;
-          }
-        }
-      }
-
-      .social-icons {
-        display: flex;
-        gap: 15px;
-
-        a {
-          color: #fff;
-          font-size: 1.5rem;
-
-          &:hover {
-            color: #FF413C;
-          }
-        }
-      }
-    }
+  .footer {
+    background-color: #060607;
+    color: #fff;
 
     .logo-and-text {
-      max-width: 250px;
 
       img {
         width: 150px;
       }
+    }
 
-      p {
-        margin-top: 1rem;
+    .list-unstyled a,
+    .footer-bottom a {
+      color: #fff;
+
+      &:hover {
+        color: blue;
       }
     }
-  }
 
-  @media (max-width: 768px) {
-    .footer-content {
-      flex-direction: column;
-      align-items: center;
-
-      .footer-column {
-        width: 100%;
-        text-align: center;
-      }
-
-      .social-icons {
-        justify-content: center;
-      }
+    .footer-line {
+      border-top: 1px solid #333;
+      margin: 1.5rem 0;
     }
   }
-}
 </style>

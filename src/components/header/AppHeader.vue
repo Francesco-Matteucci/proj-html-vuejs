@@ -1,5 +1,5 @@
 <script>
-    import AppLogo from './AppLogo.vue';
+    import AppLogo from '../general/AppLogo.vue';
     import AppNavigation from './AppNavigation.vue';
     import StickyButtons from './StickyButtons.vue';
 
@@ -24,7 +24,7 @@
 
 <template>
     <header>
-        <nav class="navbar navbar-expand-md navbar-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container d-flex justify-content-between">
                 <AppLogo />
                 <button class="navbar-toggler" type="button" @click="toggleMenu" aria-controls="navbarNav"

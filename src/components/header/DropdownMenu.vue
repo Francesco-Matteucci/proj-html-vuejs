@@ -42,6 +42,7 @@
             color: #98939F;
             padding: 1rem 1.5rem;
             font-size: 0.9rem;
+            transition: all 0.5s ease;
 
             &:hover {
                 background-color: #4154FF;

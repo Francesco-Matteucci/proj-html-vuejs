@@ -28,6 +28,23 @@
 
         &:hover {
             color: #FF414B;
+            transition: all 0.5s ease;
         }
     }
+}
+
+.icon-right {
+    position: relative;
+    top: 0;
+    right: -5px;
+}
+
+.icon-left {
+    position: relative;
+    top: 0;
+    left: -5px;
+}
+
+.fa-chevron-up {
+    font-size: 1.5rem;
 }
