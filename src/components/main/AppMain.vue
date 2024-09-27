@@ -90,8 +90,8 @@ export default {
         <IntroPlaylist />
         <BaseMediaList :data="featuredPlaylist" />
         <Newsletter />
-        <BaseMediaList :data="latestArticles" />
         <MainPlans />
+        <BaseMediaList :data="latestArticles" />
         <MainBuyAvada />
         <AppMainPartnersList />
         <AppMainCrossfitDay />
