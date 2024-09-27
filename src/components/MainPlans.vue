@@ -6,21 +6,21 @@ import ItemPlans from './ItemPlans.vue';
         return{
             info:[
                 {
-                    icon: "",
+                    src: "plans-watch.png",
                     title: "Team training",
                     subtitle: "Find a partner",
                     description: "Vestibulum, curabitur eu sem nibh ultrices sit nulla adipiscing. Nisl sit fames amet senectus eget sed duis vehicula. tristique",
                     link:"Find a partner "
                 },
                 {
-                    icon: "",
+                    src:"plans-weight.png",
                     title: "Crossfit workout",
                     subtitle: "Push your limits",
                     description: "Vestibulum, curabitur eu sem nibh ultrices sit nulla adipiscing. Nisl sit fames amet senectus eget sed duis vehicula. tristique",
                     link:"Learn about crossfit "
                 },
                 {
-                    icon: "",
+                    icon: "plans-body.png",
                     title: "Weigth loss plan",
                     subtitle: "Shed those pounds",
                     description: "At laoreet senectus volutpat diam vel sed amet pellentesque. Lobortis ut aliquam risus purus. A tellus ut etiam.",

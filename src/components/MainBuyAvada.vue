@@ -28,9 +28,7 @@
         background: linear-gradient( transparent, black ), url('../assets/img/banner2-2x.jpg');
         background-size: cover;
         background-position: center;
-        position: relative;  
-        margin-bottom: 100px;
-        
+        position: relative;        
     }
     
     section div {

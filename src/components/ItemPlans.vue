@@ -11,14 +11,14 @@ export default {
             type: Object,
             required: true
         }
-    }
+    },
 }
 </script>
 
 <template>
     <article >  
         <a href="https://themeforest.net/item/avada-responsive-multipurpose-theme/2833226?irgwc=1&clickid=RTpRi5yN2xyKTIqQnV04UVzBUkCyM5U5S2udUA0&iradid=275988&irpid=1292887&iradtype=ONLINE_TRACKING_LINK&irmptype=mediapartner&mp_value1=&utm_campaign=af_impact_radius_1292887&utm_medium=affiliate&utm_source=impact_radius" >
-            <i class="fa-solid fa-image icon"></i>
+            <!-- <img :src="" :alt="{{ itemCard.title }}"> -->
             <h3>{{ itemCard.title}}</h3>
             <h5>{{ itemCard.subtitle}}</h5>
             <p>{{ itemCard.description}}</p>
@@ -51,7 +51,7 @@ export default {
             justify-content: center;
         }
        
-        .icon{
+        #icon{
             font-size: 70px;
             margin-bottom: 30px;
         }
