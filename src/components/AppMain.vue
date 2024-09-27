@@ -1,6 +1,5 @@
 <script>
 import MainPlans from './MainPlans.vue';
-import MainArticles from './MainArticles.vue';
 import MainBuyAvada from './MainBuyAvada.vue';
 
 
@@ -12,7 +11,6 @@ import MainBuyAvada from './MainBuyAvada.vue';
     },
     components: {
         MainPlans,
-        MainArticles,
         MainBuyAvada
     }  
 }
@@ -20,7 +18,6 @@ import MainBuyAvada from './MainBuyAvada.vue';
 
 <template>
       <MainPlans/>
-      <MainArticles/>
       <MainBuyAvada />
 </template>
 

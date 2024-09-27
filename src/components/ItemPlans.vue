@@ -63,6 +63,7 @@ export default {
 
         p{
             margin-bottom: 30px;
+            color: #98939f;
         }   
     }
      

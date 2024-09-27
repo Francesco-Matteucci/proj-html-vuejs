@@ -13,7 +13,7 @@
     <section>
         <div>
             <h1>"I've failed over and over again in my life. And that is why I succeed."</h1>
-            <p>simbol</p>
+            <p id="simbol">simbol</p>
             <p class="description">Arcu auctor  gravida nisl, congue sit nisi tincidunt eget proin. In lacinia lacus donec sed massa in ipsum eros, tristique. Gravida supendisse etiam in iaculis</p>
             <button>Buy avada today <i class="fa-solid fa-chevron-right"></i></button>
         </div>
@@ -51,8 +51,12 @@
         margin-bottom: 1.5rem;
     }
 
+    #simbol{
+        color: #fff941;
+    }
+
     .description{
-        color: rgba(255, 255, 255, 0.589);
+        color: #98939f;
     }
 
 
