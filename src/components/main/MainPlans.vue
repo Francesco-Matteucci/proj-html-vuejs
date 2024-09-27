@@ -6,14 +6,14 @@ export default {
         return {
             info: [
                 {
-                    src: "plans-watch.png",
+                    icon: "plans-watch.png",
                     title: "Team training",
                     subtitle: "Find a partner",
                     description: "Vestibulum, curabitur eu sem nibh ultrices sit nulla adipiscing. Nisl sit fames amet senectus eget sed duis vehicula. tristique",
                     link: "Find a partner "
                 },
                 {
-                    src: "plans-weight.png",
+                    icon: "plans-weight.png",
                     title: "Crossfit workout",
                     subtitle: "Push your limits",
                     description: "Vestibulum, curabitur eu sem nibh ultrices sit nulla adipiscing. Nisl sit fames amet senectus eget sed duis vehicula. tristique",
@@ -31,16 +31,16 @@ export default {
     },
     components: {
         ItemPlans
-    }
+    },
 }
 
 </script>
 
 <template>
     <section>
-        <div class="container">
-            <div class="row gap-5 justify-content-center ">
-                <div v-for="(item, i) in info" :key="i" :itemCard="item" class="col-10 col-md-3 mb-5">
+        <div class="container-fluid">
+            <div class="row row-cols-1 row-cols-md-3">
+                <div v-for="(item, i) in info" :key="i" :itemCard="item" class="col mb-5">
                     <ItemPlans :itemCard="item" />
                 </div>
             </div>
@@ -53,6 +53,6 @@ export default {
 section {
     background-color: black;
     color: white;
-    /* padding: 50px; */
+    padding: 4rem;
 }
 </style>
