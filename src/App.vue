@@ -1,11 +1,13 @@
 <script>
     import AppHeader from './components/header/AppHeader.vue';
     import AppMain from './components/AppMain.vue';
+    import ScrollToTop from './components/ScrollToTop.vue';
 
     export default {
         components: {
             AppHeader,
-            AppMain
+            AppMain,
+            ScrollToTop
         }
     };
 </script>
@@ -14,6 +16,7 @@
     <div id="app">
         <AppHeader />
         <AppMain />
+        <ScrollToTop />
     </div>
 </template>
 <style>

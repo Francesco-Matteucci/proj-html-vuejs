@@ -33,7 +33,7 @@
     <div class="testimonial-section">
         <div class="container">
             <div class="row">
-                <div v-for="(image, index) in images" :key="index" class="col-md-4">
+                <div v-for="(image, index) in images" :key="index" class="col-md-4 g-4">
                     <div class="image-container">
                         <img class="img-fluid" :src="getImagePath(image.src)" :alt="image.title">
                         <div class="overlay">
@@ -60,12 +60,12 @@
 <style scoped lang="scss">
     .row {
         position: relative;
-        top: -110px;
+        top: -100px;
         left: 0;
     }
 
     .testimonial-section {
-        background: linear-gradient(to right, #B8042D, #4C0E92, #0815D3);
+        background: linear-gradient(150deg, #0815D3 0%, #4C0E92 50%, #B8042D 100%);
         padding: 3rem 0;
         color: white;
         cursor: pointer;
@@ -109,7 +109,6 @@
                     font-size: 1.4rem;
                 }
             }
-
 
         }
 

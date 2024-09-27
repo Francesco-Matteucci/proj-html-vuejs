@@ -1,11 +1,13 @@
 <script>
     import AppLogo from './AppLogo.vue';
     import AppNavigation from './AppNavigation.vue';
+    import StickyButtons from './StickyButtons.vue';
 
     export default {
         components: {
             AppLogo,
-            AppNavigation
+            AppNavigation,
+            StickyButtons
         },
         data() {
             return {
@@ -34,6 +36,7 @@
                 </div>
             </div>
         </nav>
+        <StickyButtons />
     </header>
 </template>
 
@@ -51,10 +54,4 @@
         }
     }
 
-    @media (min-width: 992px) {
-        .navbar-collapse {
-            display: flex !important;
-            justify-content: flex-end;
-        }
-    }
 </style>

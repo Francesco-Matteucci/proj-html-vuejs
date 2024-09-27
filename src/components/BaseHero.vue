@@ -11,14 +11,13 @@
                 <h1 class="hero-title">Take control of your health</h1>
                 <p class="hero-subtitle">Curabitur non nulla sit amet nisl tempus convallis quis ac lectus dolor sit
                     amet.</p>
-                <a class="btn base-btn" href="#"><i class="fa-brands fa-youtube me-2"></i>Visit my Toutube
+                <a class="btn base-btn" href="#"><i class="fa-brands fa-youtube me-2"></i>Visit my YouTube
                     channel</a>
                 <a class="btn base-btn-avada ms-4" href="#">Buy Avada today<i
                         class="ms-2 fa-solid fa-arrow-right"></i></a>
             </div>
-            <div class="play-icon text-center"><i class="fas fa-play"></i></div>
+            <div class="play-icon text-center d-none d-md-block"><i class="fas fa-play"></i></div>
         </div>
-
     </section>
 </template>
 
