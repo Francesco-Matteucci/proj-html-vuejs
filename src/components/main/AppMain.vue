@@ -6,6 +6,8 @@ import BaseMediaList from '../general/BaseMediaList.vue';
 import Newsletter from './MainNewsletter.vue';
 import MainPlans from './MainPlans.vue';
 import MainBuyAvada from './MainBuyAvada.vue';
+import AppMainPartnersList from './AppMainPartnersList.vue';
+import AppMainCrossfitDay from './AppMaincrossfitDay.vue';
 
 export default {
     data() {
@@ -73,7 +75,9 @@ export default {
         Newsletter,
         BaseMediaList,
         MainPlans,
-        MainBuyAvada
+        MainBuyAvada,
+        AppMainPartnersList,
+        AppMainCrossfitDay
     }
 }
 
@@ -87,8 +91,10 @@ export default {
         <BaseMediaList :data="featuredPlaylist" />
         <Newsletter />
         <BaseMediaList :data="latestArticles" />
-        <MainPlans/>
-      <MainBuyAvada />
+        <MainPlans />
+        <MainBuyAvada />
+        <AppMainPartnersList />
+        <AppMainCrossfitDay />
     </main>
 </template>
 

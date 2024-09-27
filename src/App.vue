@@ -2,12 +2,14 @@
 import AppHeader from './components/header/AppHeader.vue';
 import AppMain from './components/main/AppMain.vue';
 import ScrollToTop from './components/ScrollToTop.vue';
+import AppFooter from './components/footer/AppFooter.vue';
 
 export default {
     components: {
         AppHeader,
         AppMain,
-        ScrollToTop
+        ScrollToTop,
+        AppFooter
     }
 };
 </script>
@@ -17,6 +19,7 @@ export default {
         <AppHeader />
         <AppMain />
         <ScrollToTop />
+        <AppFooter />
     </div>
 </template>
 
