@@ -1,8 +1,6 @@
 <script>
 import FooterTopList from './footerTopList.vue';
 
-
-
 export default {
   data() {
     return {

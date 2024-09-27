@@ -49,6 +49,11 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+a {
+    text-decoration: none;
+    color: #000;
+}
+
 section {
     padding: 4rem;
 
