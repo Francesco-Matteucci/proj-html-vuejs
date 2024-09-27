@@ -11,18 +11,14 @@ export default {
 <template>
     <section>
         <div class="banner-container">
-            <a href="https://avada.website/fitness/playlist/">
+            <a class="d-flex justify-content-center" href="https://avada.website/fitness/playlist/">
                 <div class="circle-button"><i class="fa-solid fa-play"></i></div>
             </a>
             <h2>Crossfit Workout of the day</h2>
             <h3>November 15th, 2019</h3>
-
             <a href="https://avada.website/fitness/playlist/">
                 <h5>View all Videos &rarr;</h5>
             </a>
-
-
-
         </div>
     </section>
 </template>
@@ -33,7 +29,6 @@ export default {
     background-size: cover;
     background-position: center;
     min-height: 500px;
-    margin-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -68,7 +63,8 @@ i:hover {
 
 h2 {
     color: white;
-    font-weight: bold;
+    font-size: 57px;
+    font-weight: 600;
     text-align: center;
 }
 
